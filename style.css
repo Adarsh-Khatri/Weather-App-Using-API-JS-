@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+::selection{
+    color: blueviolet;
+    background-color: red;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?');
+    /* background: url('https://cdn.pixabay.com/photo/2022/07/19/08/53/tea-7331591_960_720.jpg'); */
+    font-size: 1.2rem;
+}
+
+.card {
+    background: #154c79;  
+    mix-blend-mode: multiply;
+    color: white;
+    padding: 4rem;
+    border-radius: 3rem;
+    min-width: 50rem;
+    min-height: 30rem;
+    position: relative;
+    isolation: isolate;
+}
+
+/* ----------SEARCH FIELD START---------- */
+
+::placeholder {
+    font-size: 2.5rem;
+    color: rgb(74, 74, 74);
+}
+
+/* parent class for search field  */
+.search {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    isolation: isolate;
+
+}
+
+.search-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 4.5rem;
+    background-image: linear-gradient(gray, white);
+    box-shadow: 0 0 .5rem 0 black;
+}
+
+.search-icon i {
+    color: black;
+}
+
+.search-bar {
+    height: 4.5rem;
+    width: 4.5rem;
+    font-size: 2rem;
+    background-image: linear-gradient(gray, white);
+    border-radius: 4.5rem;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+.search-text {
+    border: none;
+    outline: none;
+    background: none;
+    position: absolute;
+    left: 10rem;
+    padding-left: 8rem;
+    width: inherit;
+    height: 4.5rem;
+    border-radius: 4.5rem;
+    font-size: 2.5rem;
+}
+
+.increasing-width {
+    width: 41.5rem;
+}
+
+/* ----------SEARCH FIELD END---------- */
+
+/* CITY START */
+h1.city {
+    position: absolute;
+    top: 3.5rem;
+    left: 4rem;
+    width: 42rem;
+    color: #9BFF33;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    z-index: -1;
+    font-variant: small-caps;
+    text-shadow: 0.3rem 0.3rem .3rem black;
+}
+
+/* CITY END */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translateY(2rem); */
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+    font-size: 2rem;
+}
+
+/* TEMP START  */
+h1.temp {
+    font-size: 8rem;
+    text-align: center;
+    text-shadow: .2rem .2rem black;
+}
+
+/* TEMP END */
+
+.weather.loading {
+    visibility: hidden;
+    border: 2px solid black;
+    /* max-height: 20px; */
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading.....";
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    min-width: 300px;
+    font-size: 0.8rem;
+    background-color: #e28743;
+    background-blend-mode: multiply;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+table h1 {
+    text-transform: capitalize;
+    color: white;
+    font-variant: small-caps;
+    text-shadow: 0 0 .3rem black;
+}
+table tr td:last-child h1{
+    text-align: end;
+}

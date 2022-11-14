@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <!-- For Font, Used Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Linking Our CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-text" placeholder="Search">
+            </div>
+        </div>
+        <div class="weather loading">
+            <h1 class="city"></h1>
+            <h1 class="temp"></h1>
+            <div class="flex">
+                <!-- For Weather Icon -->
+                <div class="weather-icon"></div>
+                <div class="description"></div>
+            </div>
+            <div class="info">
+                <table>
+                    <tr>
+                        <td>
+                            <h1>feels like</h1>
+                        </td>
+                        <td>
+                            <h1 class="feels-like"></h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>max temp</h1>
+                        </td>
+                        <td>
+                            <h1 class="max-temp"></h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>min temp</h1>
+                        </td>
+                        <td>
+                            <h1 class="min-temp"></h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>humidity</h1>
+                        </td>
+                        <td>
+                            <h1 class="humidity"></h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>speed</h1>
+                        </td>
+                        <td>
+                            <h1 class="speed"></h1>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Linking Our JavaScript -->
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
